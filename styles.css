@@ -1,0 +1,56 @@
+/* styles.css */ 
+
+/* Mobile styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.main-content {
+    padding: 16px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 16px 0;
+    padding: 16px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 768px) {
+    .main-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        flex: 0 1 calc(45% - 32px);
+        margin: 16px;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+}
